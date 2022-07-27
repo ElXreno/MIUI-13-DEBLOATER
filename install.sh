@@ -10,15 +10,18 @@ print_modname() {
 }
 
 REPLACE="
+/data/app/GlobalFashiongallery
 /system/app/AiAsstVision
 /system/app/AnalyticsCore
 /system/app/BookmarkProvider
 /system/app/BuiltInPrintService
 /system/app/Calculator
+/system/app/CalculatorGlobalStub
 /system/app/CarrierDefaultApp
 /system/app/Cit
 /system/app/CloudService
 /system/app/com.miui.qr
+/system/app/CompassGlobalStub
 /system/app/com.xiaomi.macro
 /system/app/EasterEgg
 /system/app/facebook-appmanager
@@ -37,8 +40,9 @@ REPLACE="
 /system/app/Lens
 /system/app/LiveWallpapersPicker
 /system/app/mab
-/system/app/mi_connect_service
 /system/app/MiCloudSync
+/system/app/mi_connect_service
+/system/app/MiDropStub
 /system/app/MiGalleryLockscreen
 /system/app/MiLinkService2
 /system/app/Mipay
@@ -46,6 +50,7 @@ REPLACE="
 /system/app/MiPlayClient
 /system/app/MiRadio
 /system/app/MiuiAccessibility
+/system/app/MiuiAudioMonitor
 /system/app/MiuiBugReport
 /system/app/MiuiCompass
 /system/app/MiuiDaemon
@@ -56,11 +61,13 @@ REPLACE="
 /system/app/Netflix_activation
 /system/app/NextPay
 /system/app/Notes
+/system/app/NotesGlobalStub
 /system/app/OsuLogin
 /system/app/PartnerBookmarksProvider
 /system/app/PaymentService
 /system/app/PlayAutoInstallStubApp
 /system/app/PrintRecommendationService
+/system/app/ScreenRecorderGlobalStub
 /system/app/SogouInput
 /system/app/Stk
 /system/app/TouchAssistant
@@ -71,6 +78,7 @@ REPLACE="
 /system/app/VoiceAssist
 /system/app/VsimCore
 /system/app/WAPPushManager
+/system/app/WeatherGlobalStub
 /system/app/wps_lite
 /system/app/XiaomiSimActivateService
 /system/app/XMCloudEngine
@@ -101,9 +109,12 @@ REPLACE="
 /system/priv-app/Music
 /system/priv-app/NewHome
 /system/priv-app/ONS
+/system/priv-app/PersonalAssistant
 /system/priv-app/ProxyHandler
 /system/priv-app/QuickSearchBox
+/system/priv-app/ScannerGlobalStub
 /system/priv-app/SoundRecorder
+/system/priv-app/SoundRecorderStub
 /system/priv-app/Stk1
 /system/priv-app/Tag
 /system/priv-app/UserDictionaryProvider
@@ -127,6 +138,7 @@ REPLACE="
 /system/product/priv-app/AndroidAutoStub
 /system/product/priv-app/EmergencyInfo
 /system/product/priv-app/GoogleAssistant
+/system/product/priv-app/GoogleRestore
 /system/product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4
 /system/product/priv-app/HotwordEnrollmentXGoogleCORTEXM4
 /system/product/priv-app/ims
@@ -134,6 +146,8 @@ REPLACE="
 /system/product/priv-app/Velvet
 /system/product/priv-app/Wellbeing
 /system/system_ext/app/FM
+/system/system_ext/priv-app/GoogleFeedback
+/system/system_ext/priv-app/SetupWizard
 /system/vendor/app/Joyose
 /system/vendor/app/SoterService
 /vendor/data/app/Drive
@@ -144,21 +158,6 @@ REPLACE="
 /vendor/data/app/Videos
 /vendor/data/app/wps_lite
 /vendor/data/app/XMRemoteController
-/system/priv-app/PersonalAssistant
-/system/app/WeatherGlobalStub
-/system/app/NotesGlobalStub
-/system/app/CalculatorGlobalStub
-/system/app/ScreenRecorderGlobalStub
-/system/app/MiDropStub
-/system/app/CompassGlobalStub
-/system/priv-app/ScannerGlobalStub
-/system/priv-app/SoundRecorderStub
-/system/system_ext/priv-app/SetupWizard
-/system/product/priv-app/GoogleRestore
-/data/app/GlobalFashiongallery
-/system/system_ext/priv-app/GoogleFeedback
-/system/app/MiuiAudioMonitor
-
 "
 
 on_install() {
