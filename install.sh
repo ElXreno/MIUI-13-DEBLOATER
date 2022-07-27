@@ -5,7 +5,7 @@ LATESTARTSERVICE=false
 
 print_modname() {
   ui_print " **************************"
-  ui_print "  MIUI 12.5 DEBLOATER "
+  ui_print "  MIUI 13 DEBLOATER "
   ui_print " **************************"
 }
 
